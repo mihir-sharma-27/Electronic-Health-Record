@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin("*") //to enable cross origin requests
 public class VaccinationController {
     @Autowired
     private VaccinationService vaccinationService;
